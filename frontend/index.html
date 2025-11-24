@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- TomTom Maps SDK -->
+<link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css" />
+<script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SafeWalk</title>
@@ -14,8 +21,12 @@
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.20.1/maps/maps-web.min.js"></script>
   </head>
 
-  <body>
+  <body class="bg-gray-100">
     <div id="root"></div>
+
+    <div id="map" class="w-full h-screen"></div>
+
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+</body>
+
 </html>
