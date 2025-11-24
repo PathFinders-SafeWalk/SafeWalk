@@ -7,16 +7,15 @@ function MapView() {
     const map = tt.map({
       key: "YOUR_TOMTOM_API_KEY",
       container: "map",
-      center: [73.8567, 18.5204], // Pune default
       zoom: 12,
+      center: [73.8567, 18.5204] // Pune by default
     });
 
     map.addControl(new tt.NavigationControl());
   }, []);
 
-  return (
-    <div id="map" className="h-full w-full"></div>
-  );
+  return null;
 }
 
 export default MapView;
+
